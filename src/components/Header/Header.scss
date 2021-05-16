@@ -1,0 +1,23 @@
+$header-bg-color:rgb(211, 191, 153);
+$title-color:#fff;
+
+.header {
+  position: absolute;
+  right: 0;
+  left:0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+
+  background: linear-gradient($header-bg-color, rgb(211, 191, 153, 0));
+}
+
+.title {
+  color: $title-color;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
