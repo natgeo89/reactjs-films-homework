@@ -1,8 +1,24 @@
 
 .movie_container {
+  display: flex;
+  align-items: flex-end;
   height: 100vh;
+  padding: 0 50px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.buttons_container {
+  display: flex;
+  gap: 20px;
 }
