@@ -8,7 +8,7 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-const Button: React.FC<ButtonProps> = (props: ButtonProps) => { 
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const { children, onClick, className } = props;
   const classes = classNames(
     styles.btn,
