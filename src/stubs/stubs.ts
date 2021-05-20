@@ -5,6 +5,7 @@ export interface movieInfoResponseStubI {
   runtime: number;
   'vote_average': number;
   overview: string;
+  movieKey: string;
 }
 
 export const movieInfoResponseStub: movieInfoResponseStubI = {
@@ -22,4 +23,5 @@ export const movieInfoResponseStub: movieInfoResponseStubI = {
     `A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan,
     Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery
     with the help of the panther, Bagheera and the free-spirited bear, Baloo.`,
+  movieKey: 'TKRr_f85shA',
 };
