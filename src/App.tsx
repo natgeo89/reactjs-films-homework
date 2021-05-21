@@ -9,7 +9,14 @@ const App: React.FC = () => (
     <Header />
     <main>
       <MovieDetailsPage movieInfo={movieInfoResponseStub} />
-      <div style={{ fontSize: '50px' }}>MovieCardList</div>
+      <div style={{ fontSize: '50px' }}>
+        MovieCardList:
+        <ul>
+          {Array.from(Array(10), (elem, index) => (
+            <li>{index}</li>
+          ))}
+        </ul>
+      </div>
     </main>
   </>
 );

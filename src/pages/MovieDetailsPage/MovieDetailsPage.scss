@@ -1,7 +1,7 @@
 
 .movie_container {
   display: flex;
-  align-items: flex-end;
+  // align-items: flex-end;
   height: 100vh;
   padding: 0 50px;
 
@@ -19,6 +19,8 @@
 }
 
 .buttons_container {
+  position: relative;
+
   display: flex;
   gap: 20px;
 }
