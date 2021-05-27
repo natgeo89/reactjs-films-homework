@@ -1,0 +1,26 @@
+$rating-color: #09ade3;
+
+.star {
+  width: 30px;
+  height: 30px;
+
+  background-color: url('./img/star.svg');
+}
+
+.rating_container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.stars {
+  composes: rating_container;
+}
+
+.rating {
+  padding: 4px 8px;
+
+  border: 2px solid $rating-color;
+  border-radius: 5px;
+}

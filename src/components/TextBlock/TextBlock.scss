@@ -1,0 +1,21 @@
+.div {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+
+  width: 250px;
+  padding: 10px;
+
+  color: white;
+  font-size: 1.8rem;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+ }
