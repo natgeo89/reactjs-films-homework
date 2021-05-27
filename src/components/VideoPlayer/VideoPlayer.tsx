@@ -5,7 +5,7 @@ interface VideoPlayerProps {
   movieKey: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ movieKey }: VideoPlayerProps) => (
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ movieKey }) => (
   <div className={styles.container}>
     <iframe
       className={styles.video}

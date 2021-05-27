@@ -8,9 +8,7 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const { children, onClick, primary } = props;
-
+const Button: React.FC<ButtonProps> = ({ children, onClick, primary }) => {
   const classes = classNames(
     styles.btn,
     { [styles.primary]: primary },

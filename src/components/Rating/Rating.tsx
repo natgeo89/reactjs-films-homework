@@ -6,7 +6,7 @@ interface RatingProps {
   rating: number;
 }
 
-const Rating: React.FC<RatingProps> = ({ rating }: RatingProps) => {
+const Rating: React.FC<RatingProps> = ({ rating }) => {
   const raitingRound = Math.round(rating);
   const starsList = Array.from(Array(raitingRound), (ind) => (
     <li>

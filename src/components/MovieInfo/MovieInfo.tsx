@@ -2,16 +2,16 @@ import React from 'react';
 import Rating from '../Rating';
 import styles from './MovieInfo.scss';
 
+import { GenresI } from '../../types/types';
+
 interface MovieInfoProps {
   title: string;
-  genres: Array<{ id: number; name: string }>;
+  genres: GenresI[];
   runtime: number;
   rating: number;
 }
 
-const MovieInfo: React.FC<MovieInfoProps> = (props: MovieInfoProps) => {
-  const { title, genres, runtime, rating } = props;
-
+const MovieInfo: React.FC<MovieInfoProps> = ({ title, genres, runtime, rating }) => {
   const hourDuration = (runtime / 60);
   const hour = Math.trunc(hourDuration);
   const min = (hourDuration - hour) * 60;
